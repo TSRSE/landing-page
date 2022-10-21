@@ -39,7 +39,6 @@ body{
 }
 
 .block.one{
-    /*height: 770px;*/
     height: 80vh;
     background-color: #000;
     display: flex;
@@ -47,7 +46,6 @@ body{
     justify-content: space-between;
     align-items: flex-start;
     gap: 18px;
-    flex-wrap: wrap;
 }
 
 .block.two{
@@ -112,6 +110,14 @@ ul{
     justify-content: center;
     flex-direction: column;
     
+}
+
+.cars{ 
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 18px;
 }
 
 .cars img{
