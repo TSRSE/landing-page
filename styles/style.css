@@ -114,6 +114,18 @@ ul{
     gap: 32px;
 }
 
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.footer h2{
+    font-size: 48px;
+    font-weight: 200;
+}
+
 .car-view{
     display: flex;
     align-items: center;
