@@ -35,7 +35,21 @@ body{
 
 .texts{
     flex: auto;
-    background-color: black;
+}
+
+.container .texts p{
+    color: #000;
+    padding: 16px;
+    margin: 0px;
+    text-align: center;
+}
+
+.texts h2{
+    font-size: 96px;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 900;
+    text-align: center;
 }
 
 .block.one{
@@ -49,7 +63,13 @@ body{
 }
 
 .block.two{
-    height: 770px;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
 }
 
 .header,
@@ -116,12 +136,6 @@ ul{
     height: 500px;
 }
 
-.glass{
-    padding: 18px;
-    border-radius: 32px;
-    box-shadow: inset 0px 0px 10px rgb(44, 44, 44);
-}
-
 .car-view .container{
     display: flex;
     justify-content: space-between;
@@ -162,6 +176,47 @@ ul{
     display: flex;
     gap: 20px;
 }
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 0px 180px 0px 180px;
+}
+.card{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #6B6B6B;
+    font-size: 36px;
+    
+}
+
+.card p{
+    width: 350px;
+    
+}
+
+.card img{
+    padding: 0px;
+    margin: 0px;
+    width: 350px;
+}
+
+.card img:hover{
+    opacity: 0.8;
+    width: 350px;
+}
+
+.container .texts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 180px 0px 180px;
+}
+
 
 *{
     border: solid 0px green;
