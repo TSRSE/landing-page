@@ -193,18 +193,18 @@ ul{
     
 }
 
-.card p{
+.cards .card p{
     width: 350px;
     
 }
 
-.card img{
+.cards .card img{
     padding: 0px;
     margin: 0px;
     width: 350px;
 }
 
-.card img:hover{
+.cards .card img:hover{
     opacity: 0.8;
     width: 350px;
 }
@@ -217,7 +217,64 @@ ul{
     margin: 0px 180px 0px 180px;
 }
 
+.block.three{
+    height: 55vh;
+    background-color: #000;
+    font-family: 'K2D', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block.three h2{
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+}
+
+.block.three .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 180px 0px 180px ;
+    gap: 126px;
+}
+
+.block.three .container .card{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.imginfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.imginfo img{
+    width: 100px;
+}
+
+.imginfo p{
+    color: white;
+    font-size: 48px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+.block.four{
+    height: 50vh;
+    background-color: aquamarine;
+}
 
 *{
     border: solid 0px green;
 }
+*/
