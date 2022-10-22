@@ -104,25 +104,23 @@ ul{
     gap: 16px;
 }
 
-.car-view .cars{
+.cars{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
-}
-
-.cars{ 
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
-    gap: 18px;
+    gap: 24px;
 }
 
 .cars img{
     min-height: 100px;
     max-height: 240px;
+}
+
+.glass{
+    padding: 18px;
+    border-radius: 32px;
+    box-shadow: inset 0px 0px 10px rgb(44, 44, 44);
 }
 
 .car-view .container{
