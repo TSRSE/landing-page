@@ -12,86 +12,42 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh;
     font-family: 'Kanit', sans-serif;
     flex-wrap: wrap;
 }
 
+.fill-block{
+    background-color: #fff;
+}
+
 .block{
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color:#ddd;
-}
-
-.texts .text
-{
-    font-size:72px;
-    color: #fff;
-}
-.texts p{
-    font-size: 36px;
-    color: #fff;
-    width: 851px;
-}
-
-.texts{
-    flex: auto;
-}
-
-.container .texts p{
-    color: #000;
-    padding: 16px;
-    margin: 0px;
-    text-align: center;
-}
-
-.texts h2{
-    font-size: 96px;
-    padding: 0px;
-    margin: 0px;
-    font-weight: 900;
-    text-align: center;
-}
-
-.block.one{
-    /*height: 80vh;*/
-    background-color: #000;
-    display: flex;
     margin: 0px 180px 0px 180px;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 18px;
     flex-wrap: wrap;
 }
 
-.block.two{
-    height: 100vh;
-    background-color: #fff;
-    display: flex;
-    margin: 0px;
-    justify-content: center;
-    align-items: center;
-    gap: 18px;
-    
-}
+/*HEADER FOOTER*/
 
 .header,
 .footer{
+    margin: 0px 180px 0px 180px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    /*height: 20vh;*/
-    flex-wrap: wrap;
 }
 
 .header{
     background: #000;
     color: white;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    margin: 0px 180px 0px 180px;
+    width: auto;
+    height: auto;
     flex-wrap: wrap;
 }
 
@@ -101,6 +57,7 @@ body{
 }
 
 .header a{
+    flex: 1 1 auto;
     font-family: 'K2D', sans-serif;
     font-size: 48px;
     text-decoration: none;
@@ -117,6 +74,7 @@ ul{
     padding: 0px;
     margin: 0px;
     gap: 32px;
+    flex-wrap: wrap;
 }
 
 .footer{
@@ -131,42 +89,44 @@ ul{
     font-weight: 200;
 }
 
-.car-view{
+/*BLOCK ONE*/
+
+.block.one{
+    background-color: #000;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    max-width: 690px;
-    max-height: 560px;
-    gap: 16px;
+    align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 28px;
 }
 
-.cars{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 24px;
+.left{
+    flex: auto;
+    width: auto;
+    height: auto;
 }
 
-.cars img{
-    height: 500px;
+.texts{
+    flex: auto;
 }
 
-.car-view .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    gap: 24px;
+.texts .text
+{
+    font-size:72px;
+    color: #fff;
+}
+.texts p{
+    font-size: 36px;
+    color: #fff;
+    width: 851px;
 }
 
-.container .circle{
-    background-color: #333333;
-    width: 50px;
-    height: 50px;
-    border-radius: 32px;
-    margin-top: 24px;
+.texts h2{
+    font-size: 96px;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 900;
+    text-align: center;
 }
 
 .button{
@@ -195,15 +155,64 @@ ul{
     gap: 20px;
 }
 
+.car-view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 650px;
+    max-height: 540px;
+    gap: 16px;
+}
+
+.cars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cars img{
+    height: auto;
+    max-height: 390px;
+}
+
+.car-view .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    gap: 24px;
+}
+
+.container .circle{
+    background-color: #333333;
+    width: 50px;
+    height: 50px;
+    border-radius: 32px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+/*BLOCK TWO*/
+
+.block.two{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
+}
+
 .cards{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 18px;
-    margin: 0px 180px 0px 180px;
+    gap: 22px;
     flex-wrap: wrap;
-    flex-direction: row;
 }
+
 .card{
     flex-direction: column;
     justify-content: flex-start;
@@ -214,7 +223,6 @@ ul{
 
 .cards .card p{
     max-width: 350px;
-    width: auto;
 }
 
 .cards .card img{
@@ -226,7 +234,16 @@ ul{
 
 .cards .card img:hover{
     opacity: 0.8;
-    width: 350px;
+    max-width: 350px;
+    width: auto;
+}
+
+.block.two .container{
+    width: auto;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .container .texts{
@@ -234,17 +251,26 @@ ul{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0px 180px 0px 180px;
 }
 
+.container .texts p{
+    color: #000;
+    padding: 16px;
+    margin: 0px;
+    text-align: center;
+}
+
+
+/*BLOCK THREE*/
+
 .block.three{
-    height: 55vh;
     background-color: #000;
     font-family: 'K2D', sans-serif;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 28px;
 }
 
 .block.three h2{
@@ -257,12 +283,11 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 180px 0px 180px ;
     gap: 126px;
+    flex-wrap: wrap;
 }
 
 .block.three .container .card{
-    flex: 1 1 auto;
     display: flex;
     justify-content: center;
     align-items:flex-start;
@@ -275,25 +300,21 @@ ul{
     justify-content: center;
     align-items: center;
     gap: 16px;
+    color: white;
 }
 
 .imginfo img{
     width: 100px;
 }
 
-.imginfo p{
-    color: white;
-    font-size: 48px;
-    margin: 0px;
-    padding: 0px;
-}
+/*BLOCK FOUR*/
 
 .block.four{
-    height: 50vh;
     font-family: 'K2D', sans-serif;
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    margin-bottom: 28px;
 }
 .block.four h1{
     font-size: 96px;
@@ -312,13 +333,14 @@ ul{
     justify-content: center;
     align-items: center;
     gap: 72px;
-    width: 1020px;
-    height: 180px;
+    /*width: 1020px;
+    height: 180px;*/
     font-size: 36px;
     background-color: #000;
     color: #fff;
     border-radius: 18px;
     padding: 2px 18px;
+    margin-bottom: 26px;
 }
 .call-to-action .sign-up{
     flex-shrink: 0;
@@ -342,6 +364,8 @@ ul{
     font-size: 36px;
 }
 
+
+/*DEBUG TOOL*/
 *{
     border: solid 0px green;
 }
