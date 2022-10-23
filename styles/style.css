@@ -54,13 +54,14 @@ body{
 }
 
 .block.one{
-    height: 80vh;
+    /*height: 80vh;*/
     background-color: #000;
     display: flex;
     margin: 0px 180px 0px 180px;
     justify-content: space-between;
     align-items: flex-start;
     gap: 18px;
+    flex-wrap: wrap;
 }
 
 .block.two{
@@ -71,6 +72,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 18px;
+    
 }
 
 .header,
@@ -79,7 +81,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20vh;
+    /*height: 20vh;*/
+    flex-wrap: wrap;
 }
 
 .header{
@@ -89,6 +92,7 @@ body{
     justify-content:space-between;
     align-items: center;
     margin: 0px 180px 0px 180px;
+    flex-wrap: wrap;
 }
 
 .header .text{
@@ -132,9 +136,10 @@ ul{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 690px;
-    height: 560px;
+    max-width: 690px;
+    max-height: 560px;
     gap: 16px;
+    flex-wrap: wrap;
 }
 
 .cars{
@@ -196,6 +201,8 @@ ul{
     justify-content: center;
     gap: 18px;
     margin: 0px 180px 0px 180px;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .card{
     flex-direction: column;
@@ -203,18 +210,18 @@ ul{
     align-items: flex-start;
     color: #6B6B6B;
     font-size: 36px;
-    
 }
 
 .cards .card p{
-    width: 350px;
-    
+    max-width: 350px;
+    width: auto;
 }
 
 .cards .card img{
     padding: 0px;
     margin: 0px;
-    width: 350px;
+    max-width: 350px;
+    width: auto;
 }
 
 .cards .card img:hover{
